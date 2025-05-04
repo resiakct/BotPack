@@ -20,7 +20,7 @@
   },
   "commandDisabled": [],
   "eventDisabled": [],
-  "BOTNAME": "Bot",
+  "BOTNAME": ".",
   "PREFIX": "?",
   "ADMINBOT": [
     "YOUR_FB_UID",
