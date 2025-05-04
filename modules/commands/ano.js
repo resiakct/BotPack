@@ -7,7 +7,7 @@ module.exports.config = {
   usePrefix: false,
   commandCategory: "fun", // Or another appropriate category
   usages: "jay | pagod",
-  cooldowns: 10,
+  cooldowns: 0,
   dependencies: {
     "axios": "" // While not directly used in the converted structure, it was in the original.
   }
