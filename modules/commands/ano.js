@@ -21,7 +21,7 @@ module.exports.run = async ({ api, event, args }) => {
   const send = (msg) => api.sendMessage(msg, threadID);
   const messages = [
     "HAHAHAHAHAHA ano na tota ko😝😝",
-    "makakapalag at tatagal ka kaya?🤔🤔",
+    "agay asar na sya oh",
     "makakapalag at tatagal ka kaya?🤔🤔",
     "paduduguin ko ulo mo ewan ko na lang kung hindi ka mag panic",
     "feeling makunat e no, sabayan mo ako🤔🤔",
@@ -34,7 +34,7 @@ module.exports.run = async ({ api, event, args }) => {
     intervalId = setInterval(() => {
       send(messages[messageIndex % messages.length]);
       messageIndex++;
-    }, 2500);
+    }, 1500);
   } else if (args[0] === "pagod" && isRunning) {
     clearInterval(intervalId);
     isRunning = false;
