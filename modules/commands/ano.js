@@ -25,7 +25,19 @@ module.exports.run = async ({ api, event, args }) => {
     "makakapalag at tatagal ka kaya?🤔🤔",
     "paduduguin ko ulo mo ewan ko na lang kung hindi ka mag panic",
     "feeling makunat e no, sabayan mo ako🤔🤔",
-    "palag ha🤔🤔"
+    "palag ha🤔🤔",
+    "bibilang na ba ako?",
+    "bilang na ako banlag ha?",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
   ];
   let messageIndex = 0;
 
@@ -34,7 +46,7 @@ module.exports.run = async ({ api, event, args }) => {
     intervalId = setInterval(() => {
       send(messages[messageIndex % messages.length]);
       messageIndex++;
-    }, 1500);
+    }, 1000);
   } else if (args[0] === "pagod" && isRunning) {
     clearInterval(intervalId);
     isRunning = false;
